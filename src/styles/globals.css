@@ -103,7 +103,7 @@ body.scrolled .header {
 
 .item-scroll{
   width: 100vw;
-  max-height: 100vh;
+  max-height: 200vh;
   display: flex;  
   justify-content: center;  
 }

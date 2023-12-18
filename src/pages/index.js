@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Head from 'next/head';
 import { Header } from '@/components';
 import { HomeHero } from '../Layout';
@@ -7,7 +6,6 @@ import { Porto } from '@/Layout/Home/PortoList';
 import { Footer } from '@/Layout/Home/Footer';
 
 export default function Home() {
-
   return (
     <div className="flex min-h-screen flex-col">
       <Head>
@@ -17,11 +15,13 @@ export default function Home() {
       <main className="w-auto">
         <Header />     
           <section>              
-          <div>
+          <div className='data-bgcolor="#3b2525"'>
             <HomeHero />
           </div>  
-          <PageCV />                
-          <div className="bg-black overflow-hidden relative" >
+          <div>
+            <PageCV />                
+          </div>
+          <div className='bg-black overflow-hidden relative data-bgcolor="#f5f5f5"' >
             <Porto />
           </div>      
         </section>   
